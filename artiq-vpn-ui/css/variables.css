@@ -1,0 +1,36 @@
+:root {
+    /* Color Palette */
+    --bg-dark: #06070d;
+    --bg-panel: rgba(13, 16, 33, 0.55);
+
+    --text-main: #ffffff;
+    --text-muted: #a0a5b5;
+
+    /* Accents & Neon */
+    --neon-blue: #00d2ff;
+    --neon-blue-dark: #3a7bd5;
+
+    --neon-purple: #b100ff;
+    --neon-purple-light: #ff00d4;
+
+    --neon-green: #00ff87;
+    --neon-green-dark: #60efff;
+
+    /* Gradients */
+    --gradient-blue: linear-gradient(135deg, var(--neon-blue), var(--neon-blue-dark));
+    --gradient-purple: linear-gradient(135deg, var(--neon-purple-light), var(--neon-purple));
+    --gradient-green: linear-gradient(135deg, var(--neon-green), var(--neon-green-dark));
+
+    /* Glassmorphism System */
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-border-highlight: rgba(255, 255, 255, 0.15);
+    --glass-blur: 16px;
+
+    /* Shadows & Glows */
+    --shadow-soft: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --glow-blue: 0 0 15px rgba(0, 210, 255, 0.3), inset 0 0 10px rgba(0, 210, 255, 0.1);
+    --glow-purple: 0 0 15px rgba(177, 0, 255, 0.3), inset 0 0 10px rgba(177, 0, 255, 0.1);
+
+    /* Typography */
+    --font-primary: 'Vazirmatn', sans-serif;
+}

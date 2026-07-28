@@ -1,0 +1,49 @@
+/* Glassmorphism System */
+.glass-panel {
+    background: var(--bg-panel);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+}
+
+/* Glow Systems */
+.glass-panel.glow-blue-edge {
+    border-color: rgba(0, 210, 255, 0.3);
+    box-shadow: var(--glow-blue), var(--shadow-soft);
+}
+
+.glass-panel.glow-purple-edge {
+    border-color: rgba(177, 0, 255, 0.3);
+    box-shadow: var(--glow-purple), var(--shadow-soft);
+}
+
+.glass-panel.glow-green-edge {
+    border-color: rgba(0, 255, 135, 0.3);
+    box-shadow: 0 0 15px rgba(0, 255, 135, 0.2), inset 0 0 10px rgba(0, 255, 135, 0.05);
+}
+
+/* Gradient Text Utilities */
+.text-gradient-blue {
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-purple {
+    background: var(--gradient-purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Background Ambient Glows */
+.bg-glow-blue {
+    background: var(--neon-blue);
+}
+.bg-glow-purple {
+    background: var(--neon-purple);
+}

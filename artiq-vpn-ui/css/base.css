@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    font-family: var(--font-primary);
+    color: var(--text-main);
+    /* Subtle noise/texture overlay for premium feel */
+    background-image: radial-gradient(circle at 50% 0%, #111424 0%, var(--bg-dark) 60%);
+    background-attachment: fixed;
+}
+
+/* Typography base styles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+p {
+    line-height: 1.6;
+}

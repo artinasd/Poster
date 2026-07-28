@@ -1,0 +1,76 @@
+/* =========================================
+   Phase 8: Responsive Polish & Scaling
+========================================= */
+
+/* Tablet & Smaller Laptops */
+@media (max-width: 1024px) {
+    .grid-hero {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    /* Optimize ambient lighting rendering for smaller screens */
+    .bg-glow-blue, .bg-glow-purple {
+        filter: blur(100px);
+        opacity: 0.15;
+    }
+
+    /* Adjust hero shield size */
+    .animate-float {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .main-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 2.5rem; /* Tighter vertical spacing between sections */
+    }
+
+    /* Typography Scaling */
+    h1 {
+        font-size: 1.75rem !important; /* Scale down "فیلترشکن قدرتمند" */
+    }
+
+    h2 {
+        font-size: 2.75rem !important; /* Scale down "ArtiQ VPN" */
+    }
+
+    /* Ensure pricing cards take full width but don't look distorted */
+    .glass-panel {
+        max-width: 100%;
+    }
+
+    /* Adjust the Unlimited Package Banner padding for mobile */
+    .glass-panel.p-6.lg\:p-8 {
+        padding: 1.25rem;
+    }
+
+    /* Fix horizontal overflow on Telegram buttons */
+    a[dir="ltr"] {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    a[dir="ltr"] span {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small Mobile Devices (e.g., iPhone SE) */
+@media (max-width: 480px) {
+    /* Scale down the "NEW" ribbon so it doesn't clip out of the card */
+    .absolute.top-5.-left-12 {
+        top: 15px;
+        left: -35px;
+        transform: scale(0.8) rotate(-45deg);
+    }
+
+    /* Slightly reduce the gap in the feature cards grid */
+    .grid-cols-2 {
+        gap: 0.5rem;
+    }
+}
